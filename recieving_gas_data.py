@@ -12,7 +12,7 @@ while True:
             recv_from_cube = ser.readline()
             string_data = str(recv_from_cube)
             print("Incoming Data:" + string_data)
-            with open('//home/morsestudio/Documents/new-lora-setup-code-main/gas_data.csv', 'a') as file:
+            with open('//home/morsestudio/Desktop/new-lora-setup-code-main/gas_data.csv', 'a') as file:
                 string_clean = string_data.split('b\'', 1)[1]
                 string_clean = string_clean.split('\\n',1)[0]
                 string_clean = string_clean.split('\\r',1)[0]
